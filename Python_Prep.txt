@@ -21,5 +21,24 @@ In general, JSON is often preferred for use in REST APIs due to its simplicity, 
 particularly when complex data types need to be represented or when interoperability with legacy systems is a concern.
 
 
+2. Difference between PUT and POST request.
+PUT and POST are both HTTP methods to send data to server, but they are used in different scenarios and have different characteristics.
+PUT requests are used to update any existing resouce, while POST requests are used to submit new data to the server.
+
+More explanation:
+PUT:
+(a) Request payload contains the entire representation of the resource.
+(b) The server replaces the existing resource with the new representation sent in the request payload.
+(c) PUT requests are idempotent, meaning that if the same request is sent multiple times, it will have the same effect as a single request.
+
+POST:
+(a) The request payload contains the data to be processed by the server.
+(b) The server processes the request payload and may create a new resource based on the data submitted.
+(c) POST requests are not idempotent, meaning that if the same request is sent multiple times, it will create a new resource each time.
+
+
+
+
+
 
 
